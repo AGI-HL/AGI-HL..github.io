@@ -1,0 +1,2322 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=x-cp20936">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="index.files/filelist.xml">
+<title>Towards AGI</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>微软用户</o:Author>
+  <o:LastAuthor>微软用户</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2024-12-30T11:03:00Z</o:Created>
+  <o:LastSaved>2024-12-30T11:03:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>7141</o:Words>
+  <o:Characters>40704</o:Characters>
+  <o:Company>微软中国</o:Company>
+  <o:Lines>339</o:Lines>
+  <o:Paragraphs>95</o:Paragraphs>
+  <o:CharactersWithSpaces>47750</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-8.1.0.3477</o:KSOProductBuildVer>
+  <o:ICV dt:dt="string">19A89A5856674AA29C87120DC3FAA8AE_12</o:ICV>
+ </o:CustomDocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="index.files/themedata.thmx">
+<link rel=colorSchemeMapping href="index.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:ValidateAgainstSchemas>false</w:ValidateAgainstSchemas>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotUnderlineInvalidXML/>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 3 Char";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Times New Roman","serif";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 5 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"标题 3";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-weight:bold;}
+span.4Char
+	{mso-style-name:"标题 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"标题 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;
+	mso-font-kerning:0pt;
+	font-weight:bold;}
+span.5Char
+	{mso-style-name:"标题 5 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"标题 5";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	mso-bidi-font-family:宋体;
+	mso-font-kerning:0pt;
+	font-weight:bold;}
+span.title-vavzpg
+	{mso-style-name:title-vavzpg;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-fareast-font-family:宋体;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:3;
+	mso-list-type:simple;
+	mso-list-template-ids:3;}
+@list l0:level1
+	{mso-level-suffix:space;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l1
+	{mso-list-id:7;
+	mso-list-type:simple;
+	mso-list-template-ids:7;}
+@list l1:level1
+	{mso-level-suffix:space;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l2
+	{mso-list-id:9;
+	mso-list-template-ids:9;}
+@list l2:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:11;
+	mso-list-type:simple;
+	mso-list-template-ids:11;}
+@list l3:level1
+	{mso-level-suffix:space;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l4
+	{mso-list-id:13;
+	mso-list-type:simple;
+	mso-list-template-ids:13;}
+@list l4:level1
+	{mso-level-suffix:space;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l5
+	{mso-list-id:15;
+	mso-list-type:simple;
+	mso-list-template-ids:15;}
+@list l5:level1
+	{mso-level-suffix:space;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:widow-orphan'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>AGI can be created now<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:3;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;mso-font-kerning:0pt'>Abstract<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>This paper proposes a new theory based on the mechanism of human
+intelligence to bridge the critical gap between the theory of artificial
+general intelligence (AGI) and the mechanism of human intelligence, achieving
+autonomy and the origin of concepts. Autonomy enables an individual or system
+to operate independently based on its own goals, etc., and the origin of
+concepts allows it to generate and evolve concepts to the human level on its
+own. The mechanism of human intelligence consists of five elements: perception,
+understanding, memory, value guidance, and initiative guidance, which work
+together. By imitating the mechanism of human intelligence, AGI can achieve
+autonomy and the origin of concepts, including adopting a new computer model to
+process raw information, using innate and acquired drives as internal
+motivations, and achieving autonomous recognition and use of commands. The
+origin of concepts is based on the collaboration of the five elements and forms
+and evolves concepts through autonomous feature extraction and other methods.
+This theory provides a supplement to <span class=GramE>the achieve</span> of
+AGI at the level of human intelligence and also triggers thoughts on the
+universe and the mission of humanity.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Keywords: AGI, Consciousness, Autonomy,
+Concept Origin, Understanding, Value Guidance, Initiative Guidance, Human
+Intelligence, Humanoid Robot, Fuzzy Thinking.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Definitions of terms used in this paper:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>1) Innate (everything): What is set
+before the system starts is called innate.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>2) Acquired (everything): What is
+obtained after the system starts is called acquired.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>3) Perception: Perception in this paper
+refers to the process by which an individual or system receives external
+information through the senses and generates the sensation of receiving that
+information, excluding recognition and understanding. The traditional
+theoretical definition of perception is collection and recognition, but
+recognition is an intelligent behavior involving consciousness. Mixing
+conscious and non-conscious behaviors is not suitable for system construction.
+Therefore, we separate recognition from perception and consider recognition as
+part of understanding.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:3;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;mso-font-kerning:0pt'>1. Introduction<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Definition of autonomy: An individual or system can act, choose, and judge
+independently according to its own needs and internal mechanisms without
+external intervention.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Definition of the origin of concepts: An individual or system can generate
+concepts and evolve them to the human concept level according to its own
+mechanisms without external intervention.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>According to the definitions of autonomy and the origin of concepts, one's
+own needs and mechanisms are required to achieve them. Analyzing the human
+intelligence mechanism from the core element of &quot;understanding&quot;, the
+four core elements of perception, memory, value guidance, and initiative <span
+class=GramE>guidance</span> are become one with it. The collaboration operation
+of these five core elements is the human intelligence mechanism and also the
+own mechanism of autonomy and the origin of concepts. Value and initiative give
+birth to needs, and under this mechanism, concepts can be independently
+generated and evolved.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Explanations of perception, understanding, memory, value guidance, and
+initiative guidance:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>1) Perception is the process of
+collecting information. It obtains external and internal information through
+physical sensors and conscious sensors, pushes it to the consciousness for
+processing, and translates certain data into sensations (sensations refer to
+sensor data such as pain and comfort) based on the innate relationship,
+providing a basis for subsequent understanding.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>2) Understanding is the process of
+determining what a thing is and how to handle it by searching memory and the
+innate information area based on the perceived information. It will generate
+behaviors, new memories, and new rules. Value guidance and initiative guidance
+participate in it to guide and constrain the results of understanding.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>3) Memory is the information storage of
+the intelligence mechanism and can store perceived information, etc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>4) Value guidance guides human behavior
+through a reward and punishment system based on innate preset values. Acquired
+values quote the reward and punishment system through association with innate
+values.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>5) Initiative guidance is the autonomous
+initiation of behavior by humans, including various body signals, reminder
+signals of resource limitations, innate behaviors, and self-awareness.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>This paper introduces the human intelligence mechanism into the AGI
+theory, establishes a similar intelligence mechanism in the AGI system, achieves
+autonomy and the origin of concepts, and solves the key defects of the current
+AGI theory.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:3;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;mso-font-kerning:0pt'>2. New Theory<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The lack of an intelligent mechanism leads to the deformity of artificial
+intelligence and the lack of intelligent behaviors.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Perception is the foundation and prerequisite of intelligence. From the
+perspective of perception, the human intelligence mechanism can be divided into
+two levels: the first level is consciousness and behavior, where consciousness
+perceives and manipulates behavior; the second level is the internal
+implementation and operation of the body, which does not require intelligence
+and consciousness to participate and does not need to be perceived by
+consciousness. The second level provides commands, data, and signals to
+consciousness, enabling consciousness to combine these three to compose all
+intelligent behaviors.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Although the physiological structures of AGI and humans are completely
+different, they can reach an agreement at the behavioral level, that is: humans
+use various body signals, reminder signals of resource limitations, body and
+consciousness manipulation commands, and data to form various behaviors. AGI
+can also use various body signals, reminder signals of resource limitations,
+body and consciousness manipulation commands, and data to form various
+behaviors. These signals and commands can be implemented using computer
+technology and robot technology, and data can be obtained through sensor
+technology (hereinafter, computer technology, robot technology, and sensor
+technology are collectively referred to as information technology).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The data faced by the human intelligence mechanism is raw data, such as
+the taste, shape, and color of an apple. Even the word &quot;apple&quot; is
+first raw data, that is, the graphic of the word, and then the abstract content
+associated with the word. The raw data of an apple is the starting point of
+human thinking about the apple and also the final basis for thinking and
+decision-making. For example, if an apple is red, consciousness will retrieve
+various colors of the apple from memory as the basis for decision-making.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Formal expression of the intelligent mechanism:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l4 level1 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>1) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Suppose the universe we live in is a set
+U, which contains matter, natural laws, intelligent rules, intelligent bodies,
+and the matter and non-matter created by intelligent bodies.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l4 level1 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>2) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Intelligent bodies include natural
+intelligent life and artificial intelligence.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l4 level1 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>3) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Formal expression of the intelligent
+mechanism: AGI &#8838; U, f (AGI, V) = {<span class=SpellE>AGI.acquired</span>
+behaviors, <span class=SpellE>AGI.acquired</span> knowledge, W}, f =
+intelligent mechanism (perception + understanding + memory + value orientation
++ initiative orientation), V &#8838; U, W &#8838; U.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l4 level1 lfo1'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>4) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>When AGI is started for the first time,
+AGI uses <span class=SpellE>AGI.innate</span> behaviors and <span class=SpellE>AGI.innate</span>
+knowledge.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>This paper will elaborate from three aspects: imitating the human
+intelligence mechanism, achieving autonomy, and the origin of concepts.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:4;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.1 Imitating the Human Intelligence Mechanism</span></b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;background:white;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>AGI directly faces the raw information of the world and therefore needs to
+process a large amount of information in parallel. The current computer is in
+the mode of &quot;unlimited calculation of a small amount of data dominated by
+humans&quot;, and AGI requires a new computer mode of &quot;finite calculation
+of unlimited data dominated autonomously&quot;. At the current technical level,
+only a huge host (possibly in the form of a huge building) + a mobile robot
+terminal can be the embodied form of AGI.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The amount of data processed by the computer system required by AGI in the
+raw information mode far exceeds that of the current character mode computer
+system, but this difference in data volume can be resolved through large-scale
+parallel software and hardware technologies. From the original punched card
+computer to the current character computer and then to the raw information
+machine required by AGI, each step is the direction of progress.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The current computer is designed for human interaction and operates in a
+human-computer interaction mode, while AGI is independent of human control and
+operates in an autonomous mode.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The human intelligence mechanism is decomposed into two levels, and the
+five core elements are also decomposed into these two levels as follows:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Composition of perception behaviors: information collection and
+transmission behaviors, information and sensation association behaviors. These
+two behaviors are non-conscious behaviors, and consciousness only needs to
+perceive their results, that is, sensations and data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Composition of understanding behaviors: recognition behaviors, behaviors
+after recognition. These two behaviors are conscious behaviors and consist of
+newly learned behaviors and innate behaviors, such as innate self-protection
+behaviors, curious behaviors, and social behaviors.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Composition of memory behaviors: memory retrieval behavior, which is a
+non-conscious behavior, and consciousness only needs to perceive its retrieval
+results.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Composition of value guidance behaviors: value behaviors, reward and
+punishment behaviors. Among them, the innate reward and punishment behaviors
+are non-conscious behaviors, and consciousness only needs to perceive their
+results. Acquired behaviors establish value relationships through association
+with innate settings, and this association is established through the
+similarity of memory retrieval.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Composition of initiative guidance behaviors: body push signal behaviors,
+innate behaviors, and self-awareness. Since self-awareness only performs
+behaviors such as sensation, consciousness attention, selection, assumption,
+and execution in the field of intelligence, we can regard self-awareness as a
+set of behaviors. Body push signal behaviors are non-conscious behaviors, and
+consciousness only needs to perceive their results.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>In summary, before the intelligent mechanism operates, it is completely
+preset by innate, consisting of innate behaviors, signals, and commands. After
+operation, the mechanism and acquired information jointly perform intelligent
+evolution. The implementation of the AGI mechanism with reference to the human
+mechanism is as follows:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>1) The internal driving force of the
+mechanism: Value guidance and initiative guidance are the internal driving
+forces of AGI, achieved by innate behaviors and signals. Acquired behaviors are
+learned, for example, learning behaviors from original image data is
+achievable. The current difficulty for AI to learn behaviors from original
+image data is the lack of an intelligent mechanism with five core elements.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>2) The operating rules of the mechanism:
+The bottom layer is commands, signals, and data. Innate behaviors are
+combinations of commands, signals, and data, constructed artificially. Acquired
+behaviors are combinations of commands, signals, and data, constructed
+autonomously by AGI. AGI needs a &quot;self-awareness&quot; that represents
+itself. Imitating this consciousness, this consciousness is not a single
+behavior but a set of multiple behaviors, some of which are to determine its
+own boundaries, some are to select results, and some are to understand
+information. The focus of the operating rules is the autonomy rule and the
+concept origin rule. The concept origin rule is that AGI, under the innate
+setting and under the constraints of its own value guidance and initiative
+guidance, achieves the recognition of various relationships, attributes,
+behaviors, and states, as well as the acquired associations. The operating and
+collaboration principle of the intelligent mechanism is that various behaviors
+process X, and the processing will form a relationship with X, and the result
+will be pushed to the self-awareness for decision-making and selection. Memory
+retrieval will retrieve the similarities and differences between X and memory
+and the associations.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>3) The selection mechanism: Various
+behaviors process X information, and the processing results will be pushed to
+the self-awareness for decision-making and selection. The triggered memory
+retrieval will retrieve the associated results of X and memory, and the results
+will be pushed to the self-awareness for decision-making and selection.
+Behavior processing and memory retrieval are the basis for all associations in
+AGI, for example, association based on similarities and differences is the
+original generalization and logic.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Before operation, the intelligent mechanism consists of commands, signals,
+and data and can be implemented by information technology. The commands and
+signals implemented by the program constitute the basic instruction set and
+signal set for the operation of the AGI system. The AGI system autonomously
+uses these instruction sets and signal sets to generate various behaviors and
+tasks.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The intelligence of AGI = mechanism + acquired information. The acquired
+information is processed by the mechanism into new behaviors, new rules, and
+new memories of AGI.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>After the AGI system is started and operates, it is no longer controlled
+by humans. AGI independently completes various intelligent behaviors, and the
+program does not need to be changed. At the behavioral level, system autonomy
+is achieved.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>We compare the difference between human intelligence and other intelligent
+animals again. Although intelligent animals such as crows, dolphins, and
+chimpanzees are very smart and have a complete intelligent mechanism, one of
+the differences between them and human intelligence is the lack of
+&quot;advanced pursuits beyond survival&quot;, such as the pursuit of mastering
+the world. &quot;Advanced pursuits&quot; are innate needs and innate behaviors
+and belong to innate presets, so they can also be implemented by information
+technology.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:4;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.2 Achieving Autonomy</span></b><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Autonomy means that an individual or system can act, choose, and judge
+independently according to its own needs and internal mechanisms.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The value and initiative of the intelligent mechanism give birth to needs.
+Under this mechanism, the system can independently recognize commands, signals,
+and data through innate behaviors. Among them, self-awareness is the
+representative of the system. Self-awareness establishes an ownership
+relationship between commands and signals and itself by recognizing commands
+and signals. Later, through memory retrieval of this ownership relationship,
+self-awareness can independently use the command and signal again.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The achievement of autonomy in AGI involves four aspects: signal-triggered
+behavior, autonomous recognition and use of commands, imitation of
+self-awareness, and autonomous establishment of behaviors.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.2.1 Behavior Triggering<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Classification of behavior triggering:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>1) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Consciousness-triggered: behaviors
+planned by self-awareness;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>2) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>External body information-triggered:
+information outside the body and various signals generated inside the body,
+including physiological needs, psychological interests, and other control
+instructions. External body information is the external trigger point for
+autonomous behavior. Such information can prompt individuals to generate
+various behaviors. For example, food can trigger the tendency to eat, a pungent
+smell can trigger the tendency to avoid, and seeing an animal can trigger the
+tendency to socialize.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>3) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Internal body need signal-triggered:
+basic need signals sent by the body, such as hunger and thirst, are one of the
+internal trigger points for autonomous behavior. Such signals prompt
+individuals to generate the motivation to pursue behaviors that satisfy their
+needs, manifested as the active exploration and approach to valuable goals. For
+example, the hunger signal stimulates the individual to search for food. In
+this process, the individual is not passively accepting external instructions
+but is autonomously driving behavior based on internal physiological needs,
+demonstrating the manifestation of autonomy in meeting basic survival needs.
+The behavior tendency triggered by need signals is not limited to the
+physiological level but also extends to the psychological level, such as the
+thirst for knowledge (curiosity) and the need for social interaction (sense of
+belonging). These psychological need signals also prompt individuals to
+actively participate in learning and social activities, further expanding the
+scope of autonomous behavior.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>4) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>Self-awareness passive
+selection-triggered: When facing multiple behavior choices, self-awareness
+plays a key decision-making role, embodying the core feature of autonomy. In a
+multi-task parallel or resource-limited situation, self-awareness weighs and
+evaluates different behavior options based on the individual's values, goal
+priorities, and past experiences, and then makes the choice that best suits the
+overall interests of the individual. For example, when time is limited, an
+individual needs to choose between work tasks and leisure activities.
+Self-awareness will comprehensively consider factors such as the work deadline,
+task importance, personal fatigue level, and the attractiveness of leisure
+activities, and finally determine the behavior direction. This autonomous
+decision-making ability in conflict situations is an important manifestation of
+autonomy. It ensures that individual behavior has a clear purpose and
+adaptability and can maintain the coherence and effectiveness of behavior in a
+complex and changing environment.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.2.2 Autonomous Recognition and Use<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Recognition and use belong to autonomous understanding. Human
+understanding is to establish the existence of a newly encountered X based on
+the senses and establish a relationship between X and one's own memory and
+innate settings from the perspective of &quot;similarities and
+differences&quot; or the direct behavior result of X. This is recognition, that
+is, what it is. The behavior triggered by X is how humans respond to X, that
+is, how to respond. &quot;What it is&quot; + &quot;How to respond&quot;
+constitutes a complete understanding.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>Formal expression of understanding:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>x &#8838; U, L(AGI, x) = {x, AGI update}, L =
+understanding = (what it is + how to respond + memory + value guidance +
+initiative guidance).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>&quot;What it is&quot; is the existence of X in the current state
+established by the senses of AGI. AGI establishes a relationship between X and
+its own memory and innate settings from the perspective of &quot;similarities
+and differences&quot; or the direct behavior result of X.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>&quot;How to respond&quot; is what behaviors AGI can perform on X in the
+current state. These behaviors may be innate or acquired.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>When the AGI system is started for the first time, L = (innate behaviors +
+innate value). As AGI explores, L = (perception update + memory update +
+behavior update + value update + initiative update).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>The mechanism of autonomous understanding is that the senses are the
+starting point and the basis for decision-making. Acquired information
+establishes a relationship with the innate through memory retrieval and
+behavior processing, and the self-awareness makes decisions on choices under
+the guidance and constraints of value and initiative. The technical points for
+information technology implementation are: the achievement of innate presets,
+the achievement of memory retrieval, and the information discrimination of
+self-awareness based on &quot;similarities and differences&quot;.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan'><span lang=EN-US style='font-size:11.0pt;
+font-family:"Segoe UI","sans-serif";color:#1F2329;background:white;mso-font-kerning:
+0pt'>We take commands as an example to illustrate the achievement of autonomous
+understanding. The first command of a human comes from innate behavior.
+Self-awareness masters the first command by perceiving and understanding this
+behavior, and so does AGI. For example:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>1) The first learning of a command. The
+first occurrence of each command is necessarily contained in the innate
+behavior of the individual, such as the first cry of a baby. In this process,
+self-awareness not only perceives the behavior action (crying) emitted by
+itself but also receives feedback information from the surrounding environment
+(such as the soothing reaction of the parents) and the physiological and
+psychological changes (such as rapid breathing, emotional tension, etc.) in the
+body caused by the behavior. These multi-dimensional perceptual experiences
+together form a complete event situation and are recorded in memory. Writing
+memory will trigger the recognition of AGI, that is, the data written into
+memory by the sensor will be recognized and understood by various behaviors of
+AGI, and the results will be pushed to the self-awareness, and the
+self-awareness will establish a relationship between the data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+background:white;mso-font-kerning:0pt'>2) Self-awareness distinguishes data,
+signals, and commands according to the innate settings. For example, the state
+of data = 1, the state of signal = 2, and the state of command = 3. By
+different states, it can be recognized whether the current data is data, a
+command, or a signal. This difference in consciousness state becomes an
+important basis for self-awareness to recognize and understand commands. Each
+command and signal, through innate presets, will have different effects on
+itself. Through the different effects on itself, self-awareness can
+independently determine the types of commands and signals and record this
+association in memory. The next time the same signal or need appears,
+self-awareness will search through memory and find the associated
+&quot;commands I know&quot; and execute the command, thus achieving the
+autonomous use of commands. For example, the first cry is an innate behavior,
+and self-awareness establishes &quot;I - cry command&quot; in memory, so it can
+be autonomously used by self-awareness through memory retrieval the next time.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;background:white;mso-font-kerning:0pt'>3) Behavior-reaction
+association and command and signal memory. Any memory retrieval of
+&quot;behavior&quot;, &quot;reaction&quot;, &quot;command&quot;, and
+&quot;signal&quot; may retrieve the associated memory of these four elements
+and the relationship with &quot;self&quot;. </span><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Self-awareness makes choices based on the current internal and external
+environment of the body. For example, the memory of the hunger signal, crying,
+breastfeeding, and the disappearance of the hunger signal. Although other
+information may be mixed in the memory, because the signal belongs to the
+reward and punishment system, it has retrieval priority. When other negative
+signals appear, if there is no innate associated behavior, the memory retrieval
+of self-awareness will retrieve the hunger memory, which is also a negative
+signal, and self-awareness will decide whether to use &quot;crying&quot; to
+resolve the new negative signal.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.2.3 Imitating Self-awareness<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Self-awareness plays the dual role of observer and behavior subject in
+intelligence, and this dual role is achieved by being recorded in memory.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The significance of the existence of self-awareness is at least the
+following two points:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l1 level1 lfo3;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#222222;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>1) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#222222;
+mso-font-kerning:0pt'>Since there is a lot of information in the brain memory
+and it cannot be traversed at one time, selection occurs. The purpose of
+selection is to let people re-measure and make multiple choices. Therefore,
+selection requires an additional intelligent behavior for selection.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;mso-margin-bottom-alt:auto;
+margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:2.0;mso-pagination:
+widow-orphan;mso-list:l1 level1 lfo3;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";color:#222222;mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>2) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#222222;
+mso-font-kerning:0pt'>Social and various signals require an additional
+intelligent behavior to represent the whole and be treated carefully.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Self-awareness makes choices about signals and behaviors (too fast signals
+and behaviors cannot be chosen by consciousness). Self-awareness can
+distinguish the similarities and differences between signals, commands, and
+data but can only manipulate commands and data. Conscious planning,
+assumptions, and thinking are still behaviors, composed of signals, commands,
+and sensory data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The achievement of &quot;self-awareness&quot; (hereinafter referred to as
+&quot;self&quot;):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+style='font-size:11.0pt;font-family:宋体;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>1) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>&quot;Self&quot; is a set of independent behaviors. After the system
+starts, it first confirms the body boundary and the status of each sensor in
+the form of behavior;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>2) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>When starting for the first time, &quot;self&quot; needs to master the
+body in the form of behavior;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>3) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>&quot;Self&quot; first understands the external world through the senses;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>4) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>All the above behaviors need to be written into memory so that
+&quot;self&quot; can recall and control them later;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>5) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The conscious space is a virtual three-dimensional space in the middle of
+the brain for &quot;self&quot; to manipulate behaviors and commands;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>6) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>&quot;Self&quot; treats the conscious space and the external world equally
+and regards them as a third party outside of &quot;self&quot;;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>7) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The first appearance in the conscious space will trigger
+&quot;curiosity&quot;. Even innate behaviors are unknown to &quot;self&quot;,
+which prompts &quot;self&quot; to master the use of various conscious commands
+and make these commands &quot;my skills&quot;;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>8) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The focus of &quot;self&quot; can maintain the system's thinking time on
+the object of attention. The unknown signal will decay with exploration (if
+there is nothing new about the thing);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>9) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>&quot;Self&quot; perception of time and space. Time and space are relative
+and can only be perceived when &quot;self&quot; is in a &quot;wakeful&quot;
+state. Time takes the shortest reaction time that &quot;self&quot; can perceive
+as the time unit. After &quot;self&quot; executes a behavior, it writes it into
+memory and starts counting again. &quot;Self&quot; can perceive the difference
+in time length through perception. Space takes &quot;self&quot; as the central
+origin and obtains the spatial distribution through visual ranging and sound
+ranging;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>10) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>When a resource executes two different commands or behaviors at the same
+time, this is a contradiction (or conflict). At this time, a contradiction
+signal will be generated, and &quot;self&quot; needs to compare the values of
+the two commands or behaviors and make a choice;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>11) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The achievement of &quot;self&quot; thinking: When multiple things appear
+in the conscious space, &quot;self&quot; focuses attention on the object of
+attention according to value, curiosity, and importance. As more and more
+information about the object is obtained, &quot;self&quot; makes a choice among
+multiple options. One purpose of thinking is to choose the maximum value, and
+the other purpose is to choose the relevant goal, such as the path from A to B.
+The thinking method of &quot;self&quot; is: search result + selection,
+repeating this process all the time.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l3 level1 lfo4;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>12) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The innate behaviors of initiative, such as &quot;what I know&quot;,
+&quot;what I can do&quot;, and &quot;what I should do&quot;, can strengthen
+self-awareness.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.2.4 Autonomous Establishment of Behaviors<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Human intelligent behaviors are divided into three categories: innate
+behaviors, behaviors learned later, and combined behaviors of the first two types.
+These three types of behaviors are all composed of data, commands, and signals
+in a certain combination way. Innate behavior is a preset combination way. The
+behavior learned later is a combination way of internal and external existing
+behaviors, which is a combination way after individual practice. The combined
+behavior is a conscious combination and change of the combination way of one's
+own existing behaviors or external behaviors by the individual.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Human learning is classified into: imitation, knowledge learning. Among
+them, imitation is a learning method for concrete behaviors, and one of the
+innate methods used in imitation is limb correspondence, for example, finger
+corresponding to finger, head corresponding to head. Knowledge learning is one
+of the abstract knowledge learning after learning language and writing, and the
+other is concrete behavior learning, which belongs to imitation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The method for humans to consciously change behavior is: based on needs
+and the understanding of behavior, self-awareness selects and changes the
+combination content of the behavior. If there is a sudden, needless thought, it
+will be discarded by consciousness and will not enter the next stage.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The achievement method of AGI:<o:p></o:p></span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#222222;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+     auto;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;tab-stops:36.0pt;
+     background:white'><span lang=EN-US style='font-size:11.0pt;font-family:
+     "Segoe UI","sans-serif";mso-font-kerning:0pt'>Needs or signals have
+     associated specific behavior content in memory.<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#222222;margin-top:6.0pt;mso-margin-bottom-alt:
+     auto;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;tab-stops:36.0pt;
+     background:white'><span lang=EN-US style='font-size:11.0pt;font-family:
+     "Segoe UI","sans-serif";mso-font-kerning:0pt'>Each new behavior will be
+     explored by the curious behavior, generating a curious exploration set
+     associated with the behavior.<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#222222;margin-top:6.0pt;mso-margin-bottom-alt:
+     auto;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;tab-stops:36.0pt;
+     background:white'><span lang=EN-US style='font-size:11.0pt;font-family:
+     "Segoe UI","sans-serif";mso-font-kerning:0pt'>Other behaviors may also
+     process this behavior, generating an associated relationship set;<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#222222;margin-top:6.0pt;mso-margin-bottom-alt:
+     auto;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;tab-stops:36.0pt;
+     background:white'><span lang=EN-US style='font-size:11.0pt;font-family:
+     "Segoe UI","sans-serif";mso-font-kerning:0pt'>Memory retrieval will
+     retrieve the sets in 1), 2), and 3) and become part of the result set and
+     part of the understanding.<o:p></o:p></span></li>
+ <li class=MsoNormal style='color:#222222;margin-top:6.0pt;mso-margin-bottom-alt:
+     auto;mso-pagination:widow-orphan;mso-list:l2 level1 lfo5;tab-stops:36.0pt;
+     background:white'><span lang=EN-US style='font-size:11.0pt;font-family:
+     "Segoe UI","sans-serif";mso-font-kerning:0pt'>Self-awareness selects the
+     memory retrieval results according to the rules and forms the final
+     behavior to be executed by self-awareness.<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:4;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3 Concept Origin<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The origin of concepts means that an individual or system can generate
+concepts and evolve them to the human concept level according to its own
+mechanisms. The common collaboration of perception, understanding, memory,
+value guidance, and initiative guidance is the mechanism of concept origin.
+Among them, &quot;self-awareness&quot; needs to &quot;remember&quot; something
+before that thing can participate in thinking. &quot;Remembering&quot; is an
+innate behavior, which leads to the generation of concepts.
+&quot;Remembering&quot; is not long-term memory but can be actively called by
+consciousness in subsequent thinking. This &quot;remembering&quot; behavior
+that depends on the feature set leads to fuzzy thinking in humans. This section
+elaborates from the aspects of concept generation, the relationship between
+concepts and language, and the influence of multiple factors on concepts.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.1 Concept Generation and Cognitive Construction<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The root of human thinking is rich and diverse raw data, which mainly
+comes from the information of the external world and the information of the
+conscious world collected by individuals through various sensory organs, such
+as images, sounds, tactile sensations, smells, and tastes. These sensory inputs
+constitute the direct experience of individuals in the world and are the raw
+materials for the development of thinking activities. For example, when people
+stroll in the garden, the bright colors of the flowers (visual information),
+the gentle touch of the breeze on the face (tactile information), the clear
+singing of the birds (auditory information), and the fragrant aroma of the
+flowers (olfactory information) together form a multi-dimensional sensory
+information set, which becomes the basis for the brain to construct the cognition
+of the garden scene and the starting point for the formation and understanding
+of the concept of the garden in thinking activities. The raw data collected by
+the sensor is also the final judgment basis for the decision-making of
+self-awareness.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>In the cognitive system of human intelligence, concept generation is a
+dynamic process based on perceptual experience. When an individual interacts
+with the outside world or the inner consciousness for the first time, after
+comparing the thing information with memory, the brain will extract the non-repetitive
+information according to a specific algorithm to form a minimum feature set,
+which is recognized as the original concept by self-awareness. This original
+concept is the &quot;representation&quot; of the thing in the subsequent
+recollection and thinking of consciousness and is the first building block of
+the cognitive edifice, laying the foundation for the construction of the entire
+knowledge system. For example, when seeing an apple for the first time, taking
+the main color and contour thumbnail as the minimum feature set, in the
+subsequent memory and thinking, this feature set is the representation of the
+apple, forming the original concept of &quot;apple&quot;.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>If there is a repetition in the feature set, self-awareness will screen
+out the non-repetitive part as a new feature set or reconstruct the original
+feature set according to new perceptual information.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>When humans face commonalities, when they are valuable, appear frequently,
+or are numerous, in order to consciously remember the commonalities, the above
+method will also be used. This is the &quot;classification&quot; behavior,
+which leads to the generation of commonality concepts, and the difference
+characteristics of specific things will establish a relationship with this
+concept. For example, when an individual first contacts an apple and forms the
+original concept of the apple, including its round appearance, red skin, etc.
+But when later encountering different varieties of apples, such as green
+apples, self-awareness will take the common roundness as the concept of apple,
+and the non-repetitive features of red and green will also be incorporated into
+the concept system.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The achievement method of this mechanism by AGI:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l5 level1 lfo6;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>1) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Concept birth: The sensor writes the collected data into memory and
+simultaneously converts certain data into sensation signals according to the
+innate preset. Writing memory triggers memory retrieval and returns the
+retrieval results, which include the data set N that does not exist in the
+memory for thing X and the minimum feature set T generated from the set N.
+Self-awareness takes T as the representation of X in subsequent thinking. If
+there is no set N in the results, self-awareness generates the minimum feature
+set T from the data set of X according to specific principles. For example, T+
+space-time coordinates form the representation of X, or the existing
+representation in memory + space-time coordinates form the representation of X.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l5 level1 lfo6;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>2) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Concept evolution: As the representation D of X, for the change of X
+itself, the representation does not need to change. When encountering the
+repetition of the feature set by other things, the representation needs to be
+changed to avoid the uniqueness of D from failing. When D is repeated with
+other representations, a repetition set Y is generated, and self-awareness re-extracts
+the representation D1 from the non-repetitive set. The remembering principle of
+self-awareness for Y, for example: value and occurrence frequency. Y becomes
+the representation of the commonality.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-indent:22.0pt;mso-char-indent-count:
+2.0;mso-pagination:widow-orphan;mso-list:l5 level1 lfo6;background:white'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-fareast-font-family:"Segoe UI";mso-font-kerning:0pt'><span
+style='mso-list:Ignore'>3) </span></span><![endif]><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Memory retrieval method: AGI and humans face unlimited information.
+Although memory is also limited under limited resources, it far exceeds the
+storage capacity of traditional computers. The time-limited retrieval designed
+in this paper is the basis for the timely response of AGI. The method is as
+follows:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan;background:white'><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>1&gt; Retrieval is divided into two modes: active and
+passive. Active retrieval is initiated by AGI through a command, and this
+command is the &quot;thinking&quot; command of humans. Everyone can recall that
+the sensation of their own &quot;thinking&quot; command and
+&quot;thinking&quot; language in consciousness is different.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan;background:white'><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2&gt; Passive retrieval is triggered when each sensor
+collects data and writes it into memory. Retrieval is carried out within the
+memory range related to the sensor. The retrieval results can be sorted by
+priority according to value and frequency of use. If the number of results is
+large, a signal will be sent to self-awareness indicating that there are still <span
+class=SpellE>unshown</span> results in the conscious space.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan;background:white'><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>3&gt; When AGI still pays attention to this point after
+the search results are returned, the search will continue from the pause point
+for time-limited search. Each time is the same time unit. This method can
+obtain results as quickly as possible under the constraints of the sensor and
+can be retrieved infinitely.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:widow-orphan;background:white'><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>4&gt; <span class=GramE>The</span> active retrieval
+method is the same as the passive retrieval method. The difference is that
+active retrieval requires AGI to provide the search content and use the search
+command to execute.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.2 The Relationship Evolution between Concepts and
+Language and Ontology<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>In the early stage of human cognitive development, that is, before the
+emergence of language, concepts were directly closely related to the sensory
+characteristics of things, and these characteristics became the core basis for
+individuals to recognize and distinguish things. For example, primitive humans
+or infants and young children form the original concepts of various fruits
+through the perception of the shape, color, smell, and other characteristics of
+different fruits. These concepts are purely based on sensory experience and do
+not depend on language symbols.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>With the innate social behavior, because language is concise and efficient
+and can quickly convey the core content of concepts with a small amount of
+information, it gradually occupies the &quot;representation&quot; position
+through frequent use and the necessity of social interaction, and language and
+writing are thus born. For example, the word &quot;sun&quot; is not only a
+simple language symbol but also represents a series of sensory characteristics
+(such as roundness, brightness, warmth, etc.) of the celestial body that emits
+light and heat in the sky. A stable bridge is established between concepts and
+ontology through neural connections, which enables the perceived things to be
+quickly associated with the corresponding concepts and also enables the
+perception and understanding of the ontology of things through concepts.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.3 The Influence Mechanism of Memory Retrieval on
+Concept Presentation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Memory retrieval plays a crucial guiding role in the application process
+of concepts. When an individual needs to call a concept, different retrieval
+strategies of the memory system will lead to completely different retrieval
+results. The brain memory determines the retrieval order according to the value
+attribute and frequency of use of the concept. Concepts with higher value (such
+as those closely related to basic needs such as survival, safety, and
+reproduction) and frequently used will be retrieved first. For example, in a
+dangerous situation, concepts related to &quot;avoiding danger&quot; will be
+quickly activated because these concepts have important value in the
+individual's survival experience and are often called.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>This retrieval mechanism based on value and frequency ensures that
+individuals can quickly obtain the most relevant and useful concepts in the
+cognitive process, thereby improving thinking efficiency and the accuracy of
+decision-making. At the same time, this mechanism also reflects the
+adaptability of the human cognitive system. It can dynamically adjust the
+retrieval priority of concepts according to the individual's life experience
+and environmental needs, so that cognitive resources are reasonably allocated.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Concepts with a higher frequency of use also have an advantage in memory
+retrieval. Frequently used concepts are continuously strengthened in neural
+connections and can therefore be called first. For example, in daily life,
+concepts such as &quot;food&quot;, &quot;water&quot;, &quot;family&quot;, and
+&quot;friends&quot; are often used. Due to their high frequency of use,
+relatively stable neural pathways are formed in the memory system, and they can
+be quickly retrieved when needed. This memory retrieval mechanism based on
+value and frequency ensures that individuals can quickly obtain the most
+relevant and useful concepts in the cognitive process, improving thinking
+efficiency and the accuracy of decision-making. It reflects the adaptability
+and efficiency of the human cognitive system. It can dynamically adjust the
+retrieval priority of concepts according to the individual's life experience
+and environmental needs, so that cognitive resources are reasonably allocated
+to better serve the individual's survival and development.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.4 The Influence of Value Orientation on Concepts<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Value is an internal signal system in the human intelligence mechanism,
+and its core function is to provide guidance for human survival and
+development. Essentially, value includes two levels: innate setting and
+acquired expansion. The innate value is closely related to human instinctive
+perception and is directly mapped to the individual's sensory experience
+through sensor data. For example, the body's perception of pain corresponds to
+a negative value signal, prompting the individual to avoid danger; while the sensation
+of comfort (such as warmth, fullness, etc.) represents a positive value,
+guiding the individual to pursue resources conducive to survival and
+reproduction.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>Acquired value is gradually formed in the long-term interaction between
+the individual and the environment and acquires meaning through association
+with innate value. The social and cultural environment plays an important role
+in the shaping of acquired value. For example, in some cultures, respecting the
+elderly is regarded as a behavior with high value. This value concept is
+associated with the innate social needs (related to group survival and
+reproduction) or the reward and punishment system and becomes part of the
+individual's code of conduct.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.5 The Innate Sampling Mechanism and the Principle of
+Cognitive Economy<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>When facing the complex external world, humans adopt an innate sampling
+mechanism to deal with the limited cognitive resources, which reflects the
+principle of cognitive economy. When facing a large number of things, such as a
+vast grassland, countless stars, or a vast expanse of sand, individuals will
+not explore each object one by one but will choose the easiest or most
+representative samples for study. For example, when observing a grassland,
+people usually first focus on the few nearest and most conspicuous grass
+plants. By observing these samples in detail and extracting their
+characteristics (such as the shape, color, and height of the grass), they then
+generalize these characteristics to the entire grassland to form an overall cognition
+of the grassland.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>For a single object, such as a simple stone or a leaf, humans also use a
+partial sampling method. Since comprehensively exploring all the details of an
+object requires a lot of time and effort, and in most cases, by sampling part
+of it (such as the texture characteristics of the stone, the vein structure of
+the leaf), it is possible to quickly grasp the main characteristics of the
+object and then form a preliminary cognition of the object. This sampling
+strategy enables humans to obtain enough information to deal with environmental
+challenges under limited cognitive resources and also reflects the pursuit of
+efficiency in the evolution of the human cognitive system.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.6 The Limitations of Memory and Thinking and Coping
+Strategies<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>The instantaneous memory capacity in human consciousness is extremely
+limited, which greatly affects the thinking process. In the case of
+non-deliberate memory, when an individual needs to recall an event or object,
+only a small number of key features can be extracted. These features, as memory
+cues, can help reconstruct the complete memory to a certain extent. However,
+due to the incompleteness of the information, thinking often appears fuzzy. For
+example, when recalling a travel experience, only a few landmark scenic spots
+or fragmentary scenes may be remembered, and other details become blurred.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>To cope with the limitations of memory and thinking, humans have developed
+feature comparison strategies and fuzzy thinking strategies in the thinking
+process. When making conscious comparisons, individuals mainly rely on feature
+sets directly related to the senses or feature sets related to specific
+concepts. For example, when judging whether two fruits are similar, they will
+compare their appearance characteristics (such as shape, color, size), taste
+characteristics (such as sweetness, acidity), and other characteristics closely
+related to sensory experience; or based on the existing fruit concepts (such as
+&quot;berry fruits&quot;, &quot;stone fruits&quot;, etc.), compare their
+characteristic commonalities and differences under the corresponding concepts.
+This feature-based thinking strategy enables humans to perform effective
+comparison, classification, reasoning, and other thinking activities under
+limited memory resources.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:5;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+mso-font-kerning:0pt'>2.3.7 The Thinking Processing Mechanism of Questions and
+Context Switching<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";mso-font-kerning:
+0pt'>For &quot;question&quot;, which is an innate behavior of humans, its form
+is a specific signal, sensation, or state, <span style='color:#1F2329'>and
+these forms are essentially the manifestations of innate signals. The most
+primitive &quot;question&quot; is the lack of data of thing X in a certain sense
+of a human being. For example, when encountering an apple for the first time,
+the brain only has visual data but no tactile, olfactory, and gustatory data,
+which will generate a &quot;question&quot; or &quot;unknown&quot; signal and
+then a curious signal, leading to curious exploration.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+mso-font-kerning:0pt'>For &quot;but&quot; and other context switches, it is a
+concept that humans will &quot;remember&quot; only when the context changes.
+For example: the original plan was to hunt, but a mountain fire made hunting
+impossible, but delicious cooked food was discovered. This thinking processing
+mechanism reflects the adaptability and understanding ability of human thinking
+to complex context changes, enabling individuals to maintain coherent cognition
+and effective decision-making in a dynamically changing environment and better
+cope with various challenges and changes in life.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:3;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;mso-font-kerning:0pt'>3. Conclusion<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+mso-font-kerning:0pt'>This paper proposes a new theory, which is a supplement
+to the current AGI theory based on the human intelligence mechanism. It mainly
+includes the implementation methods of the intelligent mechanism with five core
+elements such as perception, understanding, memory, value guidance, and
+initiative guidance, and the implementation methods of autonomy and the origin
+of concepts on this mechanism. Autonomy and the origin of concepts are also an
+implementation method of abstract innate behaviors. Referring to this method,
+various abstract innate behaviors such as learning, curiosity, social
+interaction, mastering, and changing the world can be achieved. The five
+elements of the human intelligence mechanism are also the collaborative
+cooperation of various behaviors representing each element, jointly achieving
+the function of the mechanism.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+mso-font-kerning:0pt'>This theory provides a completely new theoretical
+supplement for the achievement of AGI at the level of human intelligence.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+mso-font-kerning:0pt'>In addition, some people may be worried about the huge
+amount of raw data. In fact, intelligence has a relatively high tolerance for
+data incompleteness. According to the intelligent principle of &quot;only what
+is useful needs to be retained&quot;, AGI can independently reduce memory as
+much as possible.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-bottom:3.0pt;
+mso-pagination:widow-orphan;mso-outline-level:3;background:white'><b><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;mso-font-kerning:0pt'>4. Digression<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:22.0pt;mso-char-indent-count:2.0;
+mso-pagination:widow-orphan;background:white'><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";color:#1F2329;
+mso-font-kerning:0pt'>Life rules and intelligent rules are the natural rules
+contained in the universe. On Earth, most organisms are survival-adapted
+animals, and only humans show uniqueness and become beings dedicated to
+mastering and transforming the world. This cannot help but make us think: the
+universe has gone through a long evolutionary process, starting from the Big
+Bang, giving birth to matter, organic matter, single-celled life, complex life,
+low-level intelligent life, and finally human beings, a high-level intelligent
+species. Obviously, there is some profound meaning behind it. Is the
+development logic of the universe to follow the rules, master the rules, and
+finally achieve the goal of changing the rules?<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI","sans-serif";
+color:#1F2329;mso-font-kerning:0pt'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&quot;Hearing the Tao in the
+morning is enough to die in the evening.&quot; This famous saying is usually
+interpreted as the pursuit of truth. However, through in-depth reaching of
+intelligence, we cannot help but speculate that this may be a great mission
+given to humanity by the universe - to change the rules of the universe. The
+universe has spent more than 13 billion years creating infinite matters.
+Compared with these infinite matters, human intelligence evolved from rules is
+rare. Now that humans have sufficient technological strength, we should not
+indulge in internal plunder for interests, but return to the mission given to
+us by the universe and actively engage in the great journey of mastering and
+transforming the universe. Economics and politics are, in essence, just means
+of redistributing internal interests among humans. If we give up the
+opportunity to explore the great way of the universe because of the struggle
+for these internal interests, it is undoubtedly short-sighted, absurd, and sad.
+And AGI is expected to become a powerful helper for us to abandon internal
+strife and move towards the sea of stars, helping humanity better fulfill this
+cosmic mission.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
